@@ -46,7 +46,7 @@ li img {
   margin-right: 2px;
 }
 .land-1 {
-  background-image: url("/pictures/Photo.png");
+  background-image: url("pictures/Photo.png");
   height: 500px;
   background-position: center;
   background-size: cover;
