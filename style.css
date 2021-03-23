@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+section {
+  margin-bottom: 80px;
+}
+header {
+  background: #e0e0e0;
+  height: 80px;
+  color: #4f4f4f;
+  padding: 3px;
+  /* font-family: sans-serif; */
+}
+header ul {
+  float: right;
+  margin-right: 80px;
+}
+header li {
+  float: left;
+  list-style: none;
+  font-size: 16pt;
+  margin: 20px;
+  padding-top: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+.logo {
+  margin-top: 3px;
+  border-radius: 50%;
+  margin-left: 80px;
+  /* margin-right: 10px;  */
+  width: 65px;
+  height: 65px;
+  float: left;
+}
+li img {
+  width: 25px;
+  float: left;
+  margin-right: 2px;
+}
+.land-1 {
+  background-image: url("/pictures/Photo.png");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  /* font-family: sans-serif; */
+  color: #f2f2f2;
+  padding-top: 150px;
+}
+.land-1 h2 {
+  margin-right: 80px;
+  padding-bottom: 20px;
+  font-size: 36pt;
+  text-shadow: 3px 3px 6px rgb(29, 27, 27);
+  font-weight: bolder;
+}
+.land-1 h3 {
+  margin-right: 80px;
+  margin-bottom: 6px;
+  font-size: 22pt;
+  font-weight: lighter;
+}
+.land-1 #date {
+  font-weight: lighter;
+}
+.land-2 {
+  height: 500px;
+  /* font-family: sans-serif; */
+  color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+.land-2 h2 {
+  font-size: 26pt;
+  text-shadow: 2px 2px 5px rgb(180, 179, 179);
+  font-weight: bolder;
+  margin-bottom: 22px;
+}
+.land-2 #text {
+  margin-bottom: 12px;
+}
+.land-2 h3 {
+  word-spacing: 0.3em;
+  font-size: 18pt;
+  font-weight: normal;
+}
+.land-2 #img-heart {
+  width: 450px;
+  height: 450px;
+}
+.land-2 #img-pitcher {
+  width: 260px;
+  height: 274px;
+  top: 115px;
+}
+.land-2 div {
+  width: 350px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.sec3 arrow {
+  display: flex;
+}
+.land-4 {
+  background: #e0e0e0;
+}
+.land-4 div {
+  display: flex;
+  justify-content: center;
+}
+.land-4 img {
+  margin-top: 45px;
+  margin-inline: 28px;
+  margin-bottom: 20px;
+  width: 360px;
+  height: 460px;
+}
+.land-4 h2 {
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  margin-inline: 125px;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 10px rgb(163, 163, 163);
+  font-weight: bolder;
+}
+.land-4 .center-button button {
+  border: none;
+  border-radius: 4em;
+  background-color: lightcoral;
+  color: #ffffff;
+  font-size: 24px;
+  width: 350px;
+  height: 65px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  box-shadow: 3px 4px 6px rgb(161, 158, 158);
+}
+.land-4 .center-button :hover {
+  border: 5px;
+  background: rgb(228, 96, 96);
+  color: rgb(255, 255, 255);
+}
+.land-4 #buy-button {
+  width: 35px;
+  height: 35px;
+  float: right;
+  /* display: inline-block; */
+}
+footer {
+  display: flex;
+  justify-content: center;
+  /* align-content: flex-end; */
+  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  /* font-family: sans-serif; */
+  color: #4f4f4f;
+
+  /* background-color: rgb(135, 135, 192); */
+}
+footer div {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-inline: 58px;
+  display: flex;
+  flex-direction: column;
+}
+footer div h2 {
+  font-size: x-large;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+footer div h3 {
+  font-size: 16pt;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+footer .social-media {
+  height: 30px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  flex-direction: row;
+}
+.social-media a {
+  height: 30px;
+  width: 30px;
+  margin-left: 24px;
+}
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+.cont-1 {
+  /* font-family: sans-serif; */
+  color: #4f4f4f;
+}
+h1 {
+  font-size: 36pt;
+  text-shadow: 2px 2px 5px grey;
+  margin-top: 45px;
+  margin-left: 80px;
+}
+.sec1 {
+  display: flex;
+  justify-content: space-between;
+  /* float: right; */
+}
+.block {
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.block #text {
+  margin-right: 60px;
+}
+.block #text h2 {
+  font-size: 22pt;
+  margin-bottom: 8px;
+}
+.block #text h4 {
+  font-size: 16pt;
+  font-weight: lighter;
+}
+.block #phone-nums h2 {
+  font-size: 18pt;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.cont-1 img {
+  height: 235px;
+  margin-left: 80px;
+}
+.adress {
+  margin: 12px 80px 0px 0px;
+  display: row;
+  /* position: absolute; */
+}
+.adress h2 {
+  font-size: 20pt;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.adress h3 {
+  font-size: 18pt;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+.cont-2 {
+  height: 500px;
+  background-color: #e0e0e0;
+}
+.cont-3 {
+  color: #4f4f4f;
+}
+.cont-3 #title {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.cont-3 #title h2 {
+  font-size: 22pt;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cont-3 #all-content {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+  /* margin-bottom: 30px; */
+  /* justify-content: space-between; */
+}
+.questions {
+  display: flex;
+  /* justify-content: space-between; */
+}
+/* .questions #row-1 {
+  display: column;
+} */
+.questions #row-1 h2 {
+  margin-bottom: 55px;
+  font-size: 16pt;
+  font-weight: lighter;
+}
+.questions #row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 60px;
+  margin-right: 150px;
+}
+.questions #row-2 a {
+  font-size: 16pt;
+  /* margin-top: 0px; */
+  margin-bottom: 55px;
+}
+.form {
+  display: flex;
+  justify-content: right;
+}
+.form input {
+  color: #4f4f4f;
+  font-size: 14pt;
+  padding: 15px;
+  margin-left: 20px;
+}
+.form #part1 {
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.form #part2 {
+  margin-bottom: 30px;
+}
+.form #part1 input {
+  width: 230px;
+  height: 50px;
+}
+.form #part2 input {
+  width: 485px;
+  height: 120px;
+}
+.form button {
+  margin-left: 20px;
+  width: 230px;
+  height: 50px;
+  padding: 15px;
+  border: 0px;
+  background: #4f4f4f;
+  color: white;
+  font-size: 16pt;
+}
+
+form button:hover {
+  border: 0px;
+  background: rgb(49, 49, 49);
+  color: white;
+}
+.copyright {
+  /* font-family: sans-serif; */
+  text-align: left;
+  color: #4f4f4f;
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 10pt;
+}
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+.menu-1 {
+  color: #4f4f4f;
+}
+.grey-menu {
+  background-color: #e0e0e0;
+  /* display: block; */
+}
