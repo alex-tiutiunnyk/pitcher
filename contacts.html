@@ -10,21 +10,23 @@
 
     <body>
         <header>
+            <div class="logo">
+                <img class="logo-img" src="pictures/download.png">
+            </div>
             <nav>
-            <img class="logo" src="pictures/download.png">
-            <ul>
-                <li><a href="index.html">Про нас</a></li>
-                <li><a href="menu.html">Меню</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="#"> <img src="icons/Vector (2).png">-bot</a></li>
-            </ul>
-        </nav>
+                <ul>
+                    <li><a href="index.html">Про нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="#"> <img src="icons/Vector (2).png">-bot</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section class="cont-1">
             <h1>Контакти та адреси</h1>
-            <div class="sec1">
-                <div>
+            <div class="sec-1">
+                <div class="support">
                     <div class="block">
                         <div id="text">
                             <h2>Клієнтська підтримка:</h2>
@@ -40,7 +42,7 @@
                         <img src="pictures/795-6d6553a7808cee1cc618e2e63612402d 1.png">
                         </div>
                     </div>
-                <div class="adress">
+                <div class="address">
                     <div>
                         <h2>Київ, вул. Гарматна 57</h2>
                         <h3>пн-пт 9:00-22:00</h3>
@@ -64,36 +66,50 @@
         </section>
 
         <section class="cont-3">
-            
-                <div id="title">
-                    <h2>Зверніться до наших колег</h2>
-                    <h2>Є питання? Напишіть нам</h2>
+            <div class="support">
+                <h2>Зверніться до наших колег</h2>
+                <div class="form">
+                    <div class="row">
+                        <h3>З питань вакансій та працевлаштування</h3>
+                        <a href="#">hrPitcher@gmail.com</a>
+                    </div>
+                    <div class="row">
+                        <h3>З питань оптових замовлень</h3>
+                        <a href="#">evgeniyBeliy@gmail.com</a>
+                    </div>
+                    <div class="row">
+                        <h3>Слідкуйте за нами тут:</h3>
+                        <div class="social-media"><a href="#"><img src="icons/Vector (2).png" ></a>
+                            <a href="#"> <img src="icons/Vector (1).png" ></a>
+                            <a href="#"> <img src="icons/Vector (3).png" ></a></div>
+                    </div>
                 </div>
-                <div id="all-content">
+            </div>
+            <div class="support-form">
+                <h2>Є питання? Напишіть нам</h2>
+                <form class="form">
+                        <div class="row" >
+                            <input type="text" id="user" placeholder="Ім'я"/>
+                            <input type="email" id="email" placeholder="E-mail"/>
+                        </div>
+                        <div class="row" >
+                            <input type="text"  placeholder="Повідомлення"/>
+                        </div>
+                        <div class="row">
+                            <div style="flex:0.5;margin-right:30px;">
+                                <button type="button"  style="width:100%;">Відправити</button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <!-- <div id="all-content">
                 <div class="questions">
-                <div id="row-1">
-                    <h2>З питань вакансій та працевлаштування</h2>
-                    <h2>З питань оптових замовлень</h2>
-                    <h2>Слідкуйте за нами тут:</h2>
-                </div>
-                <div id="row-2">
-                    <a href="#">hrPitcher@gmail.com</a>
-                    <a href="#">evgeniyBeliy@gmail.com</a>
-                    <div class="social-media"><a href="#"><img src="icons/Vector (2).png" ></a>
-                        <a href="#"> <img src="icons/Vector (1).png" ></a>
-                        <a href="#"> <img src="icons/Vector (3).png" ></a></div>
-                </div>
+             
             
             </div>
-        <div class="form">
-            <form>
-                <div id="part1"><input type="text" id="user" placeholder="Ім'я"/>
-                <input type="email" id="email" placeholder="E-mail"/></div>
-                <div id="part2"><input type="text" id="comments" placeholder="Повідомлення"/></div>
-                <button type="button">Відправити</button>
-            </form> 
-        </div>
-    </div>
+       
+    </div> -->
         </section>
         <h6 class="copyright">УСІ ПРАВА ЗАХИЩЕНІ &copy; 2021 Saharok</h6>
     </body>
