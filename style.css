@@ -8,6 +8,9 @@ a {
   color: #4f4f4f;
   text-decoration: none;
 }
+body {
+  min-width: 500px;
+}
 section {
   margin-bottom: 80px;
 }
@@ -72,15 +75,13 @@ li img {
   font-weight: lighter;
 }
 .land-2 {
-  height: 500px;
   color: #4f4f4f;
   display: flex;
-  /* flex-flow: column wrap; */
+  flex-flow: row wrap;
   align-items: center;
   margin-left: 80px;
-  display: flex;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 .land-2 h2 {
   font-size: 26pt;
@@ -97,19 +98,15 @@ li img {
   font-weight: normal;
 }
 .land-2 #img-heart {
-  width: 450px;
-  height: 450px;
-  display: block;
+  width: 100%;
 }
 .land-2 #img-pitcher {
   width: 260px;
   height: 274px;
   top: 115px;
+  margin-right: -40px;
 }
-.land-2 div {
-  margin-left: 80px;
-  margin-right: 80px;
-}
+
 .land-3 {
   display: flex;
   align-items: center;
@@ -182,7 +179,7 @@ footer {
   justify-content: space-between;
   flex-flow: column nowrap;
   color: #4f4f4f;
-  margin: 25px 80px;
+  margin: 15px 80px;
 }
 footer .address {
   display: flex;
@@ -201,7 +198,7 @@ footer div h3 {
 }
 footer .social-media {
   height: 30px;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 35px;
   flex-direction: row;
   display: flex;
@@ -228,6 +225,7 @@ h1 {
 .sec-1 {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 .block {
   margin-top: 30px;
@@ -290,6 +288,7 @@ h1 {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 15px;
 }
 .cont-3 .support {
   display: flex;
@@ -319,6 +318,7 @@ h1 {
   flex: 1;
   flex-flow: column wrap;
   justify-content: space-between;
+  min-width: 390px;
 }
 .cont-3 h2 {
   font-size: 22pt;
@@ -414,6 +414,12 @@ form button:hover {
   flex-flow: row wrap;
   margin: 20px 0px;
 }
+
+.grey-menu #sec1 .item {
+  min-width: 315px;
+  max-width: 315px;
+}
+
 .grey-menu h3 {
   font-size: 20pt;
   margin: 10px 0px;
@@ -433,25 +439,32 @@ form button:hover {
   margin-bottom: 6px;
 }
 .grey-menu .quote {
-  margin: 35px 0px;
-  width: 72%;
+  /* margin: 35px 0px; */
+  width: 66%;
+  /* flex: 0.55; */
 }
-.grey-menu #quote-right {
-  /* margin-left: 335px; */
-  width: 60%;
+.container-quote {
+  display: flex;
+  justify-content: flex-end;
 }
+
 .grey-menu #sec2 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 20px 0px;
 }
+
+#sec2 .item {
+  max-width: 315px;
+}
+
 .grey-menu #sec2-group {
   /* display: flex; */
   /* justify-content: space-between; */
 }
 .grey-menu #addings {
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   /* align-items: flex-end; */
 }
 .grey-menu #addings h4 {
@@ -462,6 +475,7 @@ form button:hover {
 .grey-menu #sec2-block {
   display: flex;
   flex-direction: column;
+  min-width: 315px;
 }
 .grey-menu #sec2-block div {
   margin: 0px;
@@ -581,6 +595,12 @@ form button:hover {
   margin: 25px 0px;
   /* width: 100%; */
 }
+
+.menu-3 #sec3 .item {
+  min-width: 315px;
+  max-width: 315px;
+}
+
 .menu-3 #sec3 h3 {
   font-size: 20pt;
   margin: 10px 0px;
@@ -634,4 +654,68 @@ form button:hover {
 .quote h5 {
   font-size: 18pt;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 890px) {
+  .land-4 .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .land-4 .gallery .item {
+    margin-bottom: 2rem;
+  }
+  .land-4 .gallery .item:last-child {
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 890px) {
+  footer {
+    align-items: center;
+  }
+  footer .address {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  footer .address div {
+    margin-bottom: 2rem;
+  }
+  footer .address div:last-child {
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grey-menu .quote {
+    width: 100%;
+  }
+  .menu-3 .quote {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .menu-2 .desserts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .sec-1 .address {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1341px) {
+  .sec-1 .address {
+    margin-left: 0px;
+  }
+
+  .sec-1 {
+    flex-direction: column;
+  }
+
+  .support .block {
+    flex-direction: column;
+  }
 }
