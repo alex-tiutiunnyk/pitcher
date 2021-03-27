@@ -4,25 +4,36 @@
         <title>Pitcher coffee</title>
         <meta charset="utf-8" />
         <link rel="icon" href="icons/coffee-bean_icon-icons.com_61176.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  -->
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <header>
+        <header id="menu">
             <div class="logo">
                 <img class="logo-img" src="pictures/download.png">
             </div>
+            <div>
             <nav>
+                <i class="fa fa-telegram"></i>
+                <i id="phone2" class="fa fa-phone"></i>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="index.html">Про нас</a></li>
-                    <li><a href="menu.html">Меню</a></li>
+                    <li><a class="active2" href="menu.html">Меню</a></li>
                     <li><a href="contacts.html">Контакти</a></li>
                     <li><a href="#"> <img src="icons/Vector (2).png">-bot</a></li>
                 </ul>
-            </nav>
+                <div class="phone"><i class="fa fa-phone"></i></div>
+            </nav></div>
         </header>
 
+        
         <section class="menu-1">
             <h1>Наше смачне меню</h1>
             <div class="grey-menu">

@@ -3,6 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
+  list-style: none;
+  /* font-family: 'Overpass', sans-serif; */
 }
 a {
   color: #4f4f4f;
@@ -10,6 +12,9 @@ a {
 }
 body {
   min-width: 500px;
+}
+#body-contacts {
+  min-width: 815px;
 }
 section {
   margin-bottom: 80px;
@@ -23,31 +28,66 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-header nav li {
-  float: left;
-  list-style: none;
-  font-size: 16pt;
-  margin: 20px;
-  padding-top: 2px;
-  text-align: center;
-  vertical-align: middle;
-}
-header nav li:last-child {
-  margin-right: 0px;
-}
 .logo-img {
   border-radius: 50%;
   width: 65px;
   height: 65px;
 }
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul {
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a {
+  font-size: 16pt;
+  padding: 0px 15px;
+  display: block;
+}
+nav li a:hover,
+#index nav li a.active1,
+#menu nav li a.active2,
+#contacts nav li a.active3 {
+  background: #c4c4c4;
+}
+.checkbtn {
+  font-size: 34px;
+  color: #4f4f4f;
+  float: right;
+  line-height: 80px;
+  padding: 0 15px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.fa-telegram,
+#phone2 {
+  font-size: 32px;
+  padding: 0 15px;
+  line-height: 80px;
+  display: none;
+}
+.phone {
+  float: right;
+  display: block;
+  line-height: 80px;
+  font-size: 32px;
+  color: #4f4f4f;
+  cursor: pointer;
+}
+
 li img {
   width: 25px;
   float: left;
-  margin-right: 2px;
+  margin: 27px 2px;
 }
 .land-1 {
   background-image: url("pictures/Photo.png");
@@ -106,7 +146,6 @@ li img {
   top: 115px;
   margin-right: -40px;
 }
-
 .land-3 {
   display: flex;
   align-items: center;
@@ -414,18 +453,15 @@ form button:hover {
   flex-flow: row wrap;
   margin: 20px 0px;
 }
-
 .grey-menu #sec1 .item {
   min-width: 315px;
   max-width: 315px;
 }
-
 .grey-menu h3 {
   font-size: 20pt;
   margin: 10px 0px;
 }
 .grey-menu ul {
-  list-style: none;
   font-size: 18pt;
 }
 .grey-menu ul span {
@@ -439,33 +475,21 @@ form button:hover {
   margin-bottom: 6px;
 }
 .grey-menu .quote {
-  /* margin: 35px 0px; */
+  margin-bottom: 30px;
   width: 66%;
-  /* flex: 0.55; */
 }
 .container-quote {
   display: flex;
   justify-content: flex-end;
 }
-
 .grey-menu #sec2 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 20px 0px;
 }
-
 #sec2 .item {
   max-width: 315px;
-}
-
-.grey-menu #sec2-group {
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
-.grey-menu #addings {
-  /* flex-flow: row wrap; */
-  /* align-items: flex-end; */
 }
 .grey-menu #addings h4 {
   font-size: 14pt;
@@ -483,52 +507,6 @@ form button:hover {
 .grey-menu #sec2-block div:last-child {
   margin: 20px 0px;
 }
-/* 
-.grey-menu #sec1 div h3 {
-  font-size: 20pt;
-  margin-bottom: 10px;
-}
-
-.grey-menu div ul span {
-  display: inline;
-  justify-content: space-between;
-}
-.grey-menu div ul span:last-child {
-  float: right;
-  margin-left: 0px;
-}
-.grey-menu li {
-  margin-bottom: 6px;
-}
-.grey-menu #up1 {
-  display: flex;
-}
-.grey-menu #up1 div {
-  display: column;
-}
-.grey-menu #sec2 {
-  
-  display: flex;
-  justify-content: space-between;
-}
-.grey-menu #sec2 div h3 {
-  font-size: 20pt;
-}
-.grey-menu #up2 {
-  display: flex;
-}
-.grey-menu #up2 div {
-  display: column;
-}
-.grey-menu #addings {
-  align-items: flex-end;
-}
-.grey-menu #addings h4 {
-  font-size: 14pt;
-  color: #828282;
-  font-weight: lighter;
-} */
-
 .menu-2 {
   padding: 0px 80px;
   color: #4f4f4f;
@@ -569,12 +547,6 @@ form button:hover {
   display: flex;
   justify-content: space-between;
 }
-/* .menu-4 .desserts .pict {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-} */
-
 .menu-3 {
   color: #4f4f4f;
   background-color: #e0e0e0;
@@ -585,37 +557,26 @@ form button:hover {
 .menu-3 h2 {
   font-size: 26pt;
   font-weight: bolder;
-  /* float: left; */
-  /* margin-bottom: 25px; */
 }
 .menu-3 #sec3 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 25px 0px;
-  /* width: 100%; */
 }
-
 .menu-3 #sec3 .item {
   min-width: 315px;
   max-width: 315px;
 }
-
 .menu-3 #sec3 h3 {
   font-size: 20pt;
   margin: 10px 0px;
 }
 .menu-3 #sec3 ul {
-  list-style: none;
   font-size: 18pt;
-}
-.menu-3 #sec3 ul span {
-  /* display: flex; */
-  margin-right: 140px;
 }
 .menu-3 #sec3 ul span:last-child {
   float: right;
-  margin-right: 0px;
 }
 .menu-3 #sec3 li {
   margin-bottom: 6px;
@@ -661,7 +622,6 @@ form button:hover {
     flex-direction: column;
     align-items: center;
   }
-
   .land-4 .gallery .item {
     margin-bottom: 2rem;
   }
@@ -675,9 +635,7 @@ form button:hover {
   }
   footer .address {
     flex-direction: column;
-    /* align-items: center; */
   }
-
   footer .address div {
     margin-bottom: 2rem;
   }
@@ -699,23 +657,71 @@ form button:hover {
     align-items: center;
   }
 }
-
 @media screen and (max-width: 2000px) {
   .sec-1 .address {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 1341px) {
   .sec-1 .address {
     margin-left: 0px;
   }
-
   .sec-1 {
     flex-direction: column;
   }
-
   .support .block {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 618px) {
+  .quote h4 {
+    font-size: 16pt;
+    margin-bottom: 6px;
+  }
+  .quote h5 {
+    font-size: 14pt;
+  }
+  h1 {
+    font-size: 26pt;
+  }
+}
+@media (max-width: 790px) {
+  .checkbtn {
+    display: block;
+  }
+  .fa-telegram,
+  #phone2 {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e0e0e0;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+  nav ul li:last-child {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  nav li a:hover,
+  #index nav li a.active1,
+  #menu nav li a.active2,
+  #contacts nav li a.active3 {
+    background: none;
+    color: #aa6da5;
+  }
+  #check:checked ~ ul {
+    left: 0;
   }
 }
